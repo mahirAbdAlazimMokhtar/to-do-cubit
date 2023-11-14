@@ -29,6 +29,7 @@ class AppString {
   static const String toDo = 'TODO';
   static const String doneTask = 'COMPLETED';
   static const String deletedTask = 'Delete Task';
+  static const String onBoardingKey = 'onBoarding';
 
 
 }

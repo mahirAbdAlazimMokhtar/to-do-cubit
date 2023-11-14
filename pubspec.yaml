@@ -38,6 +38,7 @@ dependencies:
   google_fonts:
   smooth_page_indicator: ^1.1.0
   shared_preferences:
+  get_it: 
 
 dev_dependencies:
   flutter_test:
