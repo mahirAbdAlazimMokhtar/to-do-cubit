@@ -38,7 +38,9 @@ dependencies:
   google_fonts:
   smooth_page_indicator: ^1.1.0
   shared_preferences:
-  get_it: 
+  get_it:
+  intl:
+  date_picker_timeline:
 
 dev_dependencies:
   flutter_test:

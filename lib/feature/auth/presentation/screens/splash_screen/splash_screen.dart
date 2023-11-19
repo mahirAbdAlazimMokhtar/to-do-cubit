@@ -5,7 +5,7 @@ import 'package:to_do_app/feature/auth/presentation/screens/onboarding_screens/o
 
 import '../../../../../core/Service/service_locator.dart';
 import '../../../../../core/utils/app_assets.dart';
-import '../../../../task/presentation/screens/home_screen.dart';
+import '../../../../task/presentation/screens/home_screen/home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

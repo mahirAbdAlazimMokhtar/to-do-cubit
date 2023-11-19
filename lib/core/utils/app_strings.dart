@@ -15,7 +15,7 @@ class AppString {
   static const String onBoardingSubTitleThree = 'Share your progress';
 
   static const String toDay = 'Today';
-  static const String noTaskTitle = 'What do you want to do today';
+  static const String noTaskTitle = 'What do you want to do today ?';
   static const String noTaskTSubTitle = 'Tap + to add a task';
   static const String addTask = 'Add Task';
   static const String title = 'Title';
@@ -27,8 +27,9 @@ class AppString {
   static const String createTask = 'Create Task';
   static const String titleHint = 'Enter Title Here';
   static const String toDo = 'TODO';
-  static const String doneTask = 'COMPLETED';
+  static const String doneTask = 'Task Completed';
   static const String deletedTask = 'Delete Task';
+  static const String cancelTask = 'Cansel Task';
   static const String onBoardingKey = 'onBoarding';
 
 

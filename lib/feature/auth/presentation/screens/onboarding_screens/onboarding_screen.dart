@@ -6,7 +6,7 @@ import 'package:to_do_app/core/utils/app_colors.dart';
 import 'package:to_do_app/core/utils/app_strings.dart';
 import 'package:to_do_app/core/widgets/custom_text_button.dart';
 import 'package:to_do_app/feature/auth/data/model/on_boarding_model.dart';
-import 'package:to_do_app/feature/task/presentation/screens/home_screen.dart';
+import 'package:to_do_app/feature/task/presentation/screens/home_screen/home_screen.dart';
 
 import '../../../../../core/Service/service_locator.dart';
 import '../../../../../core/widgets/custom_elevated_button.dart';
