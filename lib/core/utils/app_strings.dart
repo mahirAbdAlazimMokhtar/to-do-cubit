@@ -20,7 +20,8 @@ class AppString {
   static const String addTask = 'Add Task';
   static const String title = 'Title';
   static const String note = 'Note';
-  static const String noteHint = 'Note';
+  static const String color = 'Color';
+  static const String noteHint = 'Enter Note Here';
   static const String date = 'Date';
   static const String startDate = 'Start Date';
   static const String endDate = 'End Date';

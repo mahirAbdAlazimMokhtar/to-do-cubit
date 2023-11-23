@@ -5,7 +5,7 @@ import 'package:to_do_app/core/utils/app_colors.dart';
 import 'package:to_do_app/core/utils/app_strings.dart';
 
 import '../../../../../core/widgets/build_task_widget.dart';
-import '../add_task_screen/add_task_scren.dart';
+import '../add_task_screen/add_task_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -53,7 +53,7 @@ class HomeScreen extends StatelessWidget {
           backgroundColor: AppColors.primary,
           onPressed: () {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => const AddTaskScreen()));
+                MaterialPageRoute(builder: (context) =>  AddTaskScreen()));
           },
           child: const Icon(Icons.add),
         ),
