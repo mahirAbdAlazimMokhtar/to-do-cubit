@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:to_do_app/core/utils/app_colors.dart';
 
 class AddTaskComponent extends StatelessWidget {
@@ -21,12 +22,15 @@ class AddTaskComponent extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
       Text(title, style: Theme.of(context).textTheme.displayMedium),
-      const SizedBox(height: 16),
+    SizedBox(height: 16.h),
       TextFormField(
         readOnly: readOnly,
         controller: controller,
+        cursorColor: AppColors.white,
         decoration: InputDecoration(
+
           hintText: hintTitle,
+
           suffixIcon: icon,
           suffixIconColor: AppColors.white,
         ),

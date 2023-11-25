@@ -3,98 +3,88 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../utils/app_colors.dart';
 
-ThemeData getLightTheme() {
+ThemeData getAppDarkTheme() {
   return ThemeData(
-      primaryColor: AppColors.primary,
-      //background color for the app
-      scaffoldBackgroundColor: AppColors.backgroundColor,
-      //app bar theme
-      appBarTheme: const AppBarTheme(
-        backgroundColor: AppColors.backgroundColor,
-        centerTitle: true,
+    primaryColor: AppColors.primary,
+    //scaffoldBackgroundColor
+    scaffoldBackgroundColor: AppColors.backgroundColor,
+    //appBar theme
+    appBarTheme:  const AppBarTheme(
+      backgroundColor: AppColors.backgroundColor,
+      centerTitle: true,
+    ),
+    //text theme
+    textTheme: TextTheme(
+      displayLarge: GoogleFonts.lato(
+        color: AppColors.white,
+        fontWeight: FontWeight.bold,
+        fontSize: 32,
       ),
-      //text theme
-      textTheme: TextTheme(
-          displayLarge: GoogleFonts.lato(
-            color: AppColors.white,
-            fontWeight: FontWeight.w600,
-            fontSize: 32,
-          ),
-          displayMedium: GoogleFonts.lato(
-            color: AppColors.white,
-            fontSize: 16,
-          )),
-      elevatedButtonTheme: ElevatedButtonThemeData(
-          style: ElevatedButton.styleFrom(
-              backgroundColor: AppColors.primary,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8),
-              ))),
-
-
-      inputDecorationTheme: InputDecorationTheme(
+      displayMedium: GoogleFonts.lato(
+        color: AppColors.white,
+        fontSize: 16,
+      ),
+      displaySmall: GoogleFonts.lato(
+        color: AppColors.white.withOpacity(0.44),
+        fontSize: 16,
+      ),
+    ),
+    //button theme
+    elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+            backgroundColor: AppColors.primary,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8)))),
+    inputDecorationTheme: InputDecorationTheme(
+      //enabled border
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
+            borderRadius: BorderRadius.circular(8)),
+        //fouced border
         focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
+            borderRadius: BorderRadius.circular(8)),
         //hint
-
-        hintStyle: GoogleFonts.lato(
-          color: AppColors.lightBlack,
-          fontSize: 16,
-        ),
-        //fill Color
-        filled: true,
-        fillColor: AppColors.white,
-      ));
-}
-
-ThemeData getDarkTheme() {
-  return ThemeData(
-
-
-      inputDecorationTheme: InputDecorationTheme(
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
-        //hint
-
         hintStyle: GoogleFonts.lato(
           color: AppColors.white,
           fontSize: 16,
         ),
-        //fill Color
-        filled: true,
+        //fill color
         fillColor: AppColors.lightBlack,
+        filled: true
+    ),
+  );
+}
+
+ThemeData getLightTheme() {
+  return ThemeData(
+    primaryColor: AppColors.primary,
+    //scaffoldBackgroundColor
+    scaffoldBackgroundColor: AppColors.white,
+    //appBar theme
+    appBarTheme: const AppBarTheme(
+      backgroundColor: AppColors.white,
+      centerTitle: true,
+    ),
+    //text theme
+    textTheme: TextTheme(
+      displayLarge: GoogleFonts.lato(
+        color: AppColors.backgroundColor,
+        fontWeight: FontWeight.bold,
+        fontSize: 32,
       ),
-      primaryColor: AppColors.primary,
-      //background color for the app
-      scaffoldBackgroundColor: AppColors.backgroundColor,
-      //app bar theme
-      appBarTheme: const AppBarTheme(
-        backgroundColor: AppColors.backgroundColor,
-        centerTitle: true,
+      displayMedium: GoogleFonts.lato(
+        color: AppColors.backgroundColor,
+        fontSize: 16,
       ),
-      //text theme
-      textTheme: TextTheme(
-          displayLarge: GoogleFonts.lato(
-            color: Colors.white,
-            fontWeight: FontWeight.w600,
-            fontSize: 32,
-          ),
-          displayMedium: GoogleFonts.lato(
-            color: AppColors.white,
-            fontSize: 16,
-          )),
-      elevatedButtonTheme: ElevatedButtonThemeData(
-          style: ElevatedButton.styleFrom(
-              backgroundColor: AppColors.primary,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(4),
-              ))));
+      displaySmall: GoogleFonts.lato(
+        color: AppColors.backgroundColor.withOpacity(0.44),
+        fontSize: 16,
+      ),
+    ),
+    //button theme
+    elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+            backgroundColor: AppColors.primary,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(4)))),
+  );
 }
